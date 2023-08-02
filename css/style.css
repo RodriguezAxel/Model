@@ -24,6 +24,7 @@ header{
     background: radial-gradient(circle, rgb(111, 189, 176) 0%, rgb(150, 173, 196) 100%);
     position: sticky;
     top: 0;
+    z-index: 10;
     padding: 20px;
     width: 100%;
     height: 100px;
@@ -53,7 +54,7 @@ header nav ul{
 
 header nav ul li{
     margin: 10px;
-}
+} 
 
 /* ---MAIN--- */
 
@@ -86,7 +87,7 @@ main{
 }
 
 .hero p{
-    background-color: #6e5959;
+    background-color: #52e0d5;
     color: rgb(255, 255, 255);
     margin-bottom: 15px;
     margin: 15px;
@@ -94,9 +95,9 @@ main{
 
 .hero a{
     text-decoration: none;
-    color: white;
-    background-color: #6e5959;
-    padding: 10px;
+    color: rgb(216, 216, 216);
+    background-color: #48adbe;
+    padding: 6px;
 }
 
 .bienvenidos{
@@ -160,10 +161,18 @@ main{
     margin: 10px;
 }
 
+.productos div a:hover{
+    background-color: #00fd7f;
+    color: rgb(2, 2, 1);
+    border-radius: 5px;
+    padding: 6px;
+    transition: 1s;
+}
+
 .productos div a{
     text-decoration: none;
-    color: white;
-    background-color: black;
+    color: rgb(255, 252, 252);
+    background-color: #5c2ad1;
     padding: 5px;
     border-radius: 10px;
 }
@@ -214,7 +223,8 @@ main{
     bottom: 5%;
     right: 3%;
     background-color: #f1d84b;
-    font-size: 20px;
+    font-size: 16px;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
     text-align: center;
     border-radius: 100%;
     padding-top: 15px;
@@ -249,7 +259,7 @@ footer a img{
 color: rgb(245, 242, 242);
 }
 
-/* @media screen and (max-width:480px){
+ @media screen and (max-width:480px){
     .grid-container{
         grid-template-columns: 1fr;
         grid-template-rows: 200px 100px 200px 200px;
@@ -261,7 +271,7 @@ color: rgb(245, 242, 242);
         ;
     }
 }
-
+/*
 @media screen and (max-width:720px){
     .grid-container{
         grid-template-columns: repeat(2,1fr);
